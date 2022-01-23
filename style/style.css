@@ -1,56 +1,139 @@
-:root{
-    --vermelho:#e50914;
-    --preta:#141414;
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
 }
-header .container{
+
+header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding-right:200px;
+    justify-content: 12px;
+  
+    
 }
 
-header .logo{
-    margin-left: 5px;
+header .logo {
+    margin-left: 20px;
+    margin-right: 35px;
     color: var(--vermelho);
-    font-family: 'Arial Black',Times, serif ;
-    font-size: 40px;
+    font-family: 'Bebas', Times, serif;
+    font-size: 35px;
 }
-header nav a{
-    text-decoration: none;
-    color:#AAA;
-    margin-right: 10px;
-}
-header nav a:hover{
-    color:#fff;
+header .memu{
+    text-align: right;
+    justify-content: space-between;
 }
 
-.filme-principal{
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    text-align: right;
+}
+
+header nav a:hover {
+    
+    color: #AAA;
+}
+
+.filme-principal {
     font-size: 16px;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%),url('/img/capa-thewitcher2.jpg');
-    height:400px;
-    background-size:cover;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('/img/capa-thewlkingdead.jpg');
+    height: 400px;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color:#fff;
-    padding:10px;
+    color: #fff;
+    padding: 10px;
 
 }
-.filme-principal .descricao{
+
+.filme-principal .descricao {
     margin-bottom: 40px;
+    margin-top: 10px;
+    width:60%;
 }
-.titulo{
-    font-size: 40px;
 
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+
+}
+
+.button1 {
+    background-color: rgba(255, 247, 247, 0.952);
+    border: none;
+    color: rgb(7, 7, 7);
+    padding: 0.8rem;
+
+    border-radius: 4px;
+
+    margin-right: 15px;
+    font-size:12px ;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.9s ease all;
+}
+.button1 i{
+    margin-right: 8px;
+}
+
+.button2 {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: .8rem;
+
+    opacity: 1;
+
+    border-radius: 4px;
+    margin-right: 15px;
+    font-size:12px ;
+
+    cursor: pointer;
+    transition: 0.9s ease all;
+}
+.button2 i{
+    margin-right: 8px;
+}
+.button1:hover{
+    
+    background-color: rgba(0, 0, 0, .50);
+   
+    opacity: 1;
+}
+.button2:hover{
+    
+    background-color: rgba(255, 254, 254, 0.5);
+    
+    opacity: 1;
+}
+.container{
+    margin:20px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+.box-filme{
+    height:100%;
+    width:100%;
+    display:block;
+}
+.carrosel-filmes{
+    margin-top: 7px;
 }
