@@ -134,6 +134,17 @@ header nav a:hover {
     width:100%;
     display:block;
 }
+box-filme a:hover {
+    transition: transform 0.3s;
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
 .carrosel-filmes{
     margin-top: 7px;
+}
+.item img:hover{
+    height:150%;
+    width:150%;
+    
 }
